@@ -1,15 +1,11 @@
 package com.example.demo.controller;
 
-import com.example.demo.config.DatabaseManager;
 import com.example.demo.dto.ApiResponse;
 import com.example.demo.entity.Book;
-import com.example.demo.mapper.BookMapper;
 import com.example.demo.service.BookService;
-import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import org.apache.ibatis.session.SqlSession;
 
 
 import static jakarta.ws.rs.core.Response.Status.*;

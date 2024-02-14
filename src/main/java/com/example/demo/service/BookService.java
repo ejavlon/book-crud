@@ -5,7 +5,6 @@ import com.example.demo.dto.ApiResponse;
 import com.example.demo.mapper.BookMapper;
 import com.example.demo.entity.Book;
 import jakarta.enterprise.inject.Default;
-import jakarta.inject.Singleton;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
