@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package uz.ejavlon.app.config;
 
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import org.apache.ibatis.io.Resources;

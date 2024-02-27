@@ -1,28 +1,28 @@
-package com.example.demo.controller;
+package uz.ejavlon.app.controller;
 
-import com.example.demo.dto.ApiResponse;
-import com.example.demo.entity.Book;
-import com.example.demo.service.BookService;
+import uz.ejavlon.app.dto.ApiResponse;
+import uz.ejavlon.app.entity.Book;
+import uz.ejavlon.app.service.BookService;
+import jakarta.enterprise.inject.Model;
+import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-
 
 import static jakarta.ws.rs.core.Response.Status.*;
 
 @Path("/books")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
+@Model
 public class BookController {
 
-//    private final BookService bookService;
-//
-//    @Inject
-//    public BookController(BookService bookService) {
-//        this.bookService = bookService;
-//    }
+    private final BookService bookService;
 
-    private final BookService bookService = new BookService();
+    @Inject
+    public BookController(BookService bookService) {
+        this.bookService = bookService;
+    }
 
     @GET
     public Response getBooks() {

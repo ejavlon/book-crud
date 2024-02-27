@@ -1,10 +1,12 @@
-package com.example.demo.mapper;
+package uz.ejavlon.app.mapper;
 
-import com.example.demo.entity.Book;
+import uz.ejavlon.app.entity.Book;
+
 import java.util.List;
 
 public interface BookMapper {
 
+//    @Select("select * from books")
     List<Book> getAllBooks();
 
     Book getBookById(long id);

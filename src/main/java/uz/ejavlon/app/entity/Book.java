@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package uz.ejavlon.app.entity;
 
 public class Book {
     private Long id;

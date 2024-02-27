@@ -1,16 +1,16 @@
-package com.example.demo.service;
+package uz.ejavlon.app.service;
 
-import com.example.demo.config.DatabaseManager;
-import com.example.demo.dto.ApiResponse;
-import com.example.demo.mapper.BookMapper;
-import com.example.demo.entity.Book;
-import jakarta.enterprise.inject.Default;
+import uz.ejavlon.app.config.DatabaseManager;
+import uz.ejavlon.app.dto.ApiResponse;
+import uz.ejavlon.app.mapper.BookMapper;
+import uz.ejavlon.app.entity.Book;
+import jakarta.enterprise.inject.Model;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
 import java.util.Objects;
 
-@Default
+@Model
 public class BookService {
 
     public ApiResponse getAllBooks() {

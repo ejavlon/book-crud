@@ -28,4 +28,3 @@
         <mapper resource="BookMapper.xml"/>
     </mappers>
 </configuration>
-

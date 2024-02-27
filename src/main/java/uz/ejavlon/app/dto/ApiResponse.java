@@ -1,4 +1,4 @@
-package com.example.demo.dto;
+package uz.ejavlon.app.dto;
 
 public class ApiResponse {
 
